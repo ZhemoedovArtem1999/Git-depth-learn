@@ -25,8 +25,19 @@
 
         static string[] CreateNewArrayMax3Length(string[] array)
         {
-            string[] newArray = new string[array.Length];
+            
             int index = 0;
+            int lengthNewArray = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i].Length <= 3)
+                {
+                    
+                    lengthNewArray++;
+                }
+                    
+            }
+            string[] newArray = new string[lengthNewArray];
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i].Length <= 3)
